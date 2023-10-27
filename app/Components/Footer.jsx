@@ -22,7 +22,7 @@ const Footer = () => {
               type="text"
               placeholder="@email message goes here"
             />
-            <button className="bg-yellow h-[90%] w-[200px] rounded-xl">
+            <button className="bg-gray-800 h-[90%] w-[200px] rounded-xl">
               Submit
             </button>
           </div>
