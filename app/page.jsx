@@ -63,9 +63,21 @@ export default function Home() {
           </div>
 
           <div className="event_display flex justify-between w-full h-full py-2rounded">
-            <CategoryCard color="bg-blue-100"  category="Not started"/>
-            <CategoryCard color="bg-yellow-100" category="In Progress" />
-            <CategoryCard color="bg-green-100" category="Completed" />
+            <CategoryCard
+              color="bg-blue-100"
+              category="Not started"
+              tasks={allTasks.filter((task) => task.phase === 1)}
+            />
+            <CategoryCard
+              color="bg-yellow-100"
+              category="In Progress"
+              tasks={allTasks.filter((task) => task.phase === 2)}
+            />
+            <CategoryCard
+              color="bg-green-100"
+              category="Completed"
+              tasks={allTasks.filter((task) => task.phase === 3)}
+            />
           </div>
         </section>
       </main>
