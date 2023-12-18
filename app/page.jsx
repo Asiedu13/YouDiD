@@ -6,7 +6,6 @@ import { useEffect, useState } from "react";
 import { onSnapshot, query, collection } from "firebase/firestore";
 import { db } from './firebase';
 import { addTask } from "./Components/utils/functions";
-
 export default function Home() {
   // const allTasks = await getTasks();
   const [formInput, setFormInput] = useState( "" );
